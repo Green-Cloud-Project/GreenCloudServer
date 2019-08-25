@@ -1,0 +1,11 @@
+2019-04-27_06:29:44 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:30:40 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:32:57 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:32:58 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:32:58 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:33:01 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:33:01 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:33:01 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:33:02 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:33:03 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:33:03 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}

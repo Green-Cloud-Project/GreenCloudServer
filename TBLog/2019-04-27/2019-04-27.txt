@@ -1,0 +1,107 @@
+2019-04-27_03:29:19 MainController.java::    join(39)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-27_03:36:43 MainController.java::    join(39)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-27_03:47:22 MainController.java::    join(39)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-27_02:12:04 MainController.java::    join(39)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-27_02:12:06 MainController.java::    join(54)            : org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized
+2019-04-27_02:12:52 MainController.java::    join(39)            : KvLWtr3LuiSn4YHFhBIQcSnS0IQYOrFaEEJo6wo9dRsAAAFqWM-1AQ
+2019-04-27_02:12:53 MainController.java::    join(54)            : org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized
+2019-04-27_02:19:17 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:21:38 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:23:23 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:24:27 MainController.java::    join(54)            : org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://kapi.kakao.com/v2/user/me": Connection reset; nested exception is java.net.SocketException: Connection reset
+2019-04-27_02:24:29 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:25:01 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:30:46 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:30:59 MainController.java::    join(54)            : org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://kapi.kakao.com/v2/user/me": Remote host closed connection during handshake; nested exception is javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+2019-04-27_02:31:08 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:33:42 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:33:47 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:36:08 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:36:17 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:36:21 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:36:22 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:36:42 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:37:42 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:37:49 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:44:16 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:45:06 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:46:46 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:48:01 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_02:48:10 MainController.java::    join(54)            : org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://kapi.kakao.com/v2/user/me": Remote host closed connection during handshake; nested exception is javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+2019-04-27_02:51:52 MainController.java::    join(39)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:06:40 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:06:43 MainController.java::    response(127)       : {"response":200,"data":"{\"id\":\"794670255\",\"kakao_account\":{\"has_email\":true,\"email_needs_agreement\":true}}"}
+2019-04-27_05:06:49 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:08:19 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:09:14 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:12:20 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:12:25 MainController.java::    response(127)       : {"response":500,"data":"{\"user_id\":19,\"kakao_id\":\"794670255\",\"token\":\"1556356345038\"}"}
+2019-04-27_05:12:28 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:12:31 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:14:47 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:14:58 MainController.java::    join(59)            : org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://kapi.kakao.com/v2/user/me": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server
+2019-04-27_05:15:01 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:15:04 MainController.java::    response(128)       : {"response":200,"data":"{\"id\":\"794670255\",\"kakao_account\":{\"has_email\":true,\"email_needs_agreement\":true}}"}
+2019-04-27_05:15:07 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:15:08 MainController.java::    response(128)       : {"response":500,"data":"토큰없음"}
+2019-04-27_05:15:09 MainController.java::    response(128)       : {"response":500,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:15:10 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:15:11 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:15:14 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:15:15 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:19:25 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:19:29 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:19:29 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:19:31 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:19:32 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:19:32 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:19:33 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:19:34 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:19:34 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:19:36 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:19:36 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:19:36 MainController.java::    response(128)       : {"response":200,"data":"{\"user_id\":26,\"kakao_id\":\"794670255\",\"token\":\"1556356508769\"}"}
+2019-04-27_05:22:11 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:22:15 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_05:22:15 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_05:22:37 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:22:39 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_05:22:39 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_05:26:22 MainController.java::    join(44)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_05:27:14 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_05:27:14 MainController.java::    response(127)       : {"response":200,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:05:26 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:05:36 User.java::              getKakaoProfile(154): org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://kapi.kakao.com/v2/user/me": Remote host closed connection during handshake; nested exception is javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+2019-04-27_06:05:39 MainController.java::    response(136)       : {"response":500,"error_msg":"카카오 정보 가져오기 실패!","data":{"user_id":0,"platform":"KAKAO","token":"1556359538738"}}
+2019-04-27_06:05:42 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:05:44 MainController.java::    response(136)       : {"response":0,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:05:44 MainController.java::    response(136)       : {"response":0,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:05:48 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:05:49 MainController.java::    response(136)       : {"response":0,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:05:49 MainController.java::    response(136)       : {"response":0,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:20:44 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:20:49 MainController.java::    response(91)        : {"response":0,"data":{"user_id":26,"kakao_id":"794670255","token":"1556356508769"}}
+2019-04-27_06:22:03 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:22:04 MainController.java::    response(91)        : {"response":0,"data":{"user_id":0,"kakao_id":"794670255","platform":"KAKAO","token":"1556360524631"}}
+2019-04-27_06:22:08 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:22:09 MainController.java::    response(91)        : {"response":500,"error_msg":"토큰없음","data":{"user_id":43,"kakao_id":"794670255","platform":"KAKAO"}}
+2019-04-27_06:22:16 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:22:17 MainController.java::    response(91)        : {"response":500,"error_msg":"토큰없음","data":{"user_id":43,"kakao_id":"794670255","platform":"KAKAO"}}
+2019-04-27_06:36:38 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:36:42 MainController.java::    response(83)        : {"response":0,"data":{"user_id":43,"kakao_id":"794670255","platform":"KAKAO","token":"1556361402554"}}
+2019-04-27_06:36:45 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:36:46 MainController.java::    response(83)        : {"response":0,"data":{"user_id":43,"kakao_id":"794670255","platform":"KAKAO","token":"MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ"}}
+2019-04-27_06:42:42 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:42:46 MainController.java::    response(83)        : {"response":0,"data":{"user_id":43,"kakao_id":"794670255","platform":"KAKAO","token":"MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ"}}
+2019-04-27_06:42:52 MainController.java::    join(43)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:42:53 MainController.java::    response(83)        : {"response":0,"data":{"user_id":43,"kakao_id":"794670255","platform":"KAKAO","token":"MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ"}}
+2019-04-27_06:47:01 MainController.java::    join(38)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:47:10 User.java::              getKakaoProfile(156): org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://kapi.kakao.com/v2/user/me": Remote host closed connection during handshake; nested exception is javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+2019-04-27_06:47:10 MainController.java::    response(77)        : {"response":500,"error_msg":"java.lang.Exception: 카카오 서버 통신 실패"}
+2019-04-27_06:47:12 MainController.java::    join(38)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:47:18 MainController.java::    response(77)        : {"response":0,"data":{"user_id":43,"kakao_id":"794670255","platform":"KAKAO","token":"1556361402554"}}
+2019-04-27_06:47:21 MainController.java::    join(38)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:47:25 User.java::              getKakaoProfile(156): org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://kapi.kakao.com/v2/user/me": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server
+2019-04-27_06:47:25 MainController.java::    response(77)        : {"response":500,"error_msg":"java.lang.Exception: 카카오 서버 통신 실패"}
+2019-04-27_06:49:18 MainController.java::    join(38)            : MdVcKOOjaxy7uVHajpWSARQEVNTJ57xlQ4w9ago9dVwAAAFqXW-wIQ
+2019-04-27_06:49:21 MainController.java::    response(77)        : {"response":0,"data":{"user_id":43,"kakao_id":"794670255","platform":"KAKAO","token":"1556361402554"}}

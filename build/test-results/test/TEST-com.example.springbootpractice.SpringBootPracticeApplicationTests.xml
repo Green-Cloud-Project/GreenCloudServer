@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.springbootpractice.SpringBootPracticeApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-01T19:53:06" hostname="yangsarang-MS-B142" time="0.214">
+  <properties/>
+  <testcase name="contextLoads" classname="com.example.springbootpractice.SpringBootPracticeApplicationTests" time="0.214"/>
+  <system-out><![CDATA[20190502 04:53:02.866 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootpractice.SpringBootPracticeApplicationTests], using SpringBootContextLoader 
+20190502 04:53:02.873 [Test worker] INFO o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.springbootpractice.SpringBootPracticeApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+20190502 04:53:02.874 [Test worker] INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.springbootpractice.SpringBootPracticeApplicationTests]: SpringBootPracticeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+20190502 04:53:03.007 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.springbootpractice.SpringBootPracticeApplication for test class com.example.springbootpractice.SpringBootPracticeApplicationTests 
+20190502 04:53:03.114 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] 
+20190502 04:53:03.136 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7f3285d4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@455235c8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@207412c2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3c565fa4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@572161df, org.springframework.test.context.transaction.TransactionalTestExecutionListener@389e286, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3eb0237, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@dcec691, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@51bd716e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1d6c340d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@464d772d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3dccdb3b] 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+20190502 04:53:03.400 [Test worker] INFO c.e.s.SpringBootPracticeApplicationTests - Starting SpringBootPracticeApplicationTests on yangsarang-MS-B142 with PID 14532 (started by yangsarang in /home/yangsarang/TravelBuddy/SpringBootPractice) 
+20190502 04:53:03.402 [Test worker] INFO c.e.s.SpringBootPracticeApplicationTests - No active profile set, falling back to default profiles: default 
+20190502 04:53:05.903 [Test worker] INFO o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+20190502 04:53:06.598 [Test worker] INFO c.e.s.SpringBootPracticeApplicationTests - Started SpringBootPracticeApplicationTests in 3.424 seconds (JVM running for 4.454) 
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>

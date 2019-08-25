@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.springbootpractice.FbLoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-01T19:53:06" hostname="yangsarang-MS-B142" time="0.01">
+  <properties/>
+  <testcase name="test" classname="com.example.springbootpractice.FbLoginTests" time="0.01"/>
+  <system-out><![CDATA[20190502 04:53:06.838 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootpractice.FbLoginTests], using SpringBootContextLoader 
+20190502 04:53:06.839 [Test worker] INFO o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.springbootpractice.FbLoginTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+20190502 04:53:06.839 [Test worker] INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.springbootpractice.FbLoginTests]: FbLoginTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+20190502 04:53:06.842 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.springbootpractice.SpringBootPracticeApplication for test class com.example.springbootpractice.FbLoginTests 
+20190502 04:53:06.844 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] 
+20190502 04:53:06.844 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@97169e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3bc9dbe4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@23931982, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@19f4dca1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b48b820, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6e2b4656, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@554f0d18, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6ae1d2c4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34b6ee00, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b1736, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2d91fde0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@49826d64] 
+------ Facebook Login Test ------
+{
+    "error": {
+        "message": "Error validating access token: Session has expired on Tuesday, 30-Apr-19 09:00:00 PDT. The current time is Tuesday, 30-Apr-19 23:55:39 PDT.",
+        "type": "OAuthException",
+        "code": 190,
+        "error_subcode": 463,
+        "fbtrace_id": "GWEmiZ5RPxE"
+    }
+}
+Error validating access token: Session has expired on Tuesday, 30-Apr-19 09:00:00 PDT. The current time is Tuesday, 30-Apr-19 23:55:39 PDT.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

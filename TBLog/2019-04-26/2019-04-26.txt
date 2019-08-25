@@ -1,0 +1,53 @@
+2019-04-26_01:24:47 MainController.java::         join(34)                      : token
+2019-04-26_01:24:47 MainController.java::         join(34)                      : token
+2019-04-26_01:27:25 MainController.java::join(34)            : token
+2019-04-26_01:27:27 MainController.java::join(34)            : token
+2019-04-26_01:28:06 MainController.java::    join(34)                 : token
+2019-04-26_01:28:07 MainController.java::    join(34)                 : token
+2019-04-26_01:29:00 MainController.java::    join(34)            : token
+2019-04-26_01:29:01 MainController.java::    join(34)            : token
+2019-04-26_01:56:35 MainController.java::    join(34)            : token
+2019-04-26_01:56:39 MainController.java::    join(34)            : token
+2019-04-26_02:46:01 MainController.java::    join(35)            : token
+2019-04-26_03:20:23 MainController.java::    join(35)            : token
+2019-04-26_03:20:30 MainController.java::    join(35)            : token
+2019-04-26_03:21:35 MainController.java::    join(35)            : token
+2019-04-26_03:21:59 MainController.java::    join(35)            : token
+2019-04-26_03:22:41 MainController.java::    join(35)            : token
+2019-04-26_03:26:41 MainController.java::    join(37)            : token
+2019-04-26_03:29:48 MainController.java::    join(36)            : token
+2019-04-26_03:35:58 MainController.java::    join(36)            : token
+2019-04-26_03:37:27 MainController.java::    join(36)            : token
+2019-04-26_03:48:27 MainController.java::    join(35)            : token
+2019-04-26_03:49:35 MainController.java::    join(37)            : token
+2019-04-26_03:51:18 MainController.java::    join(37)            : token
+2019-04-26_03:51:21 MainController.java::    join(37)            : token
+2019-04-26_03:52:29 MainController.java::    join(37)            : token
+2019-04-26_04:16:02 MainController.java::    join(38)            : token
+2019-04-26_04:16:27 MainController.java::    join(38)            : token
+2019-04-26_04:16:50 MainController.java::    join(38)            : token
+2019-04-26_04:17:22 MainController.java::    join(38)            : token
+2019-04-26_04:25:54 MainController.java::    join(38)            : token
+2019-04-26_04:28:29 MainController.java::    join(39)            : token
+2019-04-26_04:29:18 MainController.java::    join(39)            : token
+2019-04-26_04:30:37 MainController.java::    join(39)            : token
+2019-04-26_09:16:50 MainController.java::    join(37)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:52:10 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:53:09 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:53:12 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:53:31 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:53:37 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:53:43 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:55:03 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:55:50 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:55:51 MainController.java::    join(51)            : {"user_id":1066779850,"properties":{"nickname":"김진흥","profile_image":"http://k.kakaocdn.net/dn/dgTNYk/btquE19LsNm/qar5eQCoz1wUAqfl97fpAK/profile_640x640s.jpg","thumbnail_image":"http://k.kakaocdn.net/dn/dgTNYk/btquE19LsNm/qar5eQCoz1wUAqfl97fpAK/profile_110x110c.jpg"},"kakao_account":{"has_email":true,"email_needs_agreement":true}}
+2019-04-26_09:57:29 MainController.java::    join(38)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_09:57:32 MainController.java::    join(53)            : org.springframework.web.client.RestClientException: Error while extracting response for type [class com.example.springbootpractice.model.LoginModel] and content type [application/json;charset=UTF-8]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.springbootpractice.model.LoginModel$Properties` (although at least one Creator exists): can only instantiate non-static inner class by using default, no-argument constructor; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.springbootpractice.model.LoginModel$Properties` (although at least one Creator exists): can only instantiate non-static inner class by using default, no-argument constructor
+ at [Source: (PushbackInputStream); line: 1, column: 32] (through reference chain: com.example.springbootpractice.model.LoginModel["properties"])
+2019-04-26_10:00:56 MainController.java::    join(39)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_10:01:09 MainController.java::    join(54)            : org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://kapi.kakao.com/v2/user/me": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server
+2019-04-26_10:01:26 MainController.java::    join(39)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_10:01:27 MainController.java::    join(54)            : org.springframework.web.client.RestClientException: Error while extracting response for type [class com.example.springbootpractice.model.LoginModel] and content type [application/json;charset=UTF-8]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.springbootpractice.model.LoginModel$Properties` (although at least one Creator exists): can only instantiate non-static inner class by using default, no-argument constructor; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.springbootpractice.model.LoginModel$Properties` (although at least one Creator exists): can only instantiate non-static inner class by using default, no-argument constructor
+ at [Source: (PushbackInputStream); line: 1, column: 32] (through reference chain: com.example.springbootpractice.model.LoginModel["properties"])
+2019-04-26_10:03:41 MainController.java::    join(39)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
+2019-04-26_10:41:55 MainController.java::    join(39)            : MDoCoGVAEN9mBvQ3hQ7uDJDpCUD2xUVw28cXxwo9dVoAAAFqWQp2HQ
