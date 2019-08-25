@@ -1,0 +1,4 @@
+2019-08-25_01:38:50 MainController.java::    join(43)            : 123
+2019-08-25_01:38:50 User.java::              connSnsApi(181)     : 123
+2019-08-25_01:38:50 User.java::              connSnsApi(191)     : {"msg":"this access token does not exist","code":-401}
+2019-08-25_01:38:51 MainController.java::    response(82)        : {"response":500,"error_msg":"{\"msg\":\"this access token does not exist\",\"code\":-401}"}
