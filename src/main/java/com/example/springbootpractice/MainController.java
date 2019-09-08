@@ -1,5 +1,6 @@
 package com.example.springbootpractice;
 
+import com.example.springbootpractice.model.RentalOffice;
 import com.google.gson.Gson;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Controller;
@@ -34,6 +35,13 @@ public class MainController {
     String user() {
         ArrayList<User> list = userMapper.getAllUsers();
         return "" + list.size();
+    }
+
+    @RequestMapping("/findRentalOffice")
+    public @ResponseBody
+    ArrayList<RentalOffice> findRentalOffice(@RequestParam("lat") String lat, @RequestParam("lon") String lon) {
+        ArrayList<RentalOffice> list = userMapper.findReatalOffice(lat, lon);
+        return list;
     }
 
     @PostMapping("/join")

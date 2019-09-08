@@ -1,5 +1,6 @@
 package com.example.springbootpractice;
 
+import com.example.springbootpractice.model.RentalOffice;
 import jdk.nashorn.internal.runtime.logging.Logger;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
@@ -30,9 +31,7 @@ public interface UserMapper {
                     @Param("facebook_link") String facebook_link,
                     @Param("instagram_link") String instagram_link);*/
 
-    @Insert("INSERT into " +
-            "User(kakao_id, fb_id, name, platform, email, img_url, nation_id, age, sex, city_id, facebook_link, instagram_link) " +
-            "VALUES(#{kakao_id},#{fb_id}, #{name}, #{platform}, #{email}, #{img_url}, #{nation_id}, #{age}, #{sex}, #{city_id}, #{facebook_link}, #{instagram_link})")
+    @Insert("INSERT into " + "User(kakao_id, fb_id, name, platform, email, img_url, nation_id, age, sex, city_id, facebook_link, instagram_link) " + "VALUES(#{kakao_id},#{fb_id}, #{name}, #{platform}, #{email}, #{img_url}, #{nation_id}, #{age}, #{sex}, #{city_id}, #{facebook_link}, #{instagram_link})")
     void insertUser(User user);
 
     @Select("Select * from User where kakao_id = #{kakao_id}")
@@ -46,4 +45,7 @@ public interface UserMapper {
 
     @Select("Select token from Token where user_id = #{user_id}")
     String findToken(@Param("user_id") int user_id);
+
+    @Select("Select * from rental_office")
+    ArrayList<RentalOffice> findReatalOffice(@Param("lat") String lat, @Param("lon") String lon);
 }

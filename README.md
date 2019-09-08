@@ -250,3 +250,17 @@ ssh-keygen -t rsa
 
 3. 원격 서버에 접속 후 .ssh/authorized_keys(없으면 생성) 안에 복사한 값을 넣으면됨
 - 이미 등록된게 있는데 그냥 엔터친다음 다음 라인에 붙여넣으니까 잘 동작됬다.
+
+# DB 생성하기
+```
+MariaDB [(none)]> create database green_cloud
+    -> ;
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [(none)]> create user "green_cloud"@"%" identified by "green_cloud!@#"
+    -> ;
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [(none)]> grant all privileges on green_cloud.* to "green_cloud"@"%";
+Query OK, 0 rows affected (0.00 sec)
+```

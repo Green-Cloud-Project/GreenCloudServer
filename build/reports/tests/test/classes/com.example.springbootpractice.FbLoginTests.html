@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.010s</div>
+<div class="counter">0.226s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,6 +66,9 @@
 <li>
 <a href="#tab1">Standard output</a>
 </li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -79,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">test</td>
-<td>0.010s</td>
+<td class="success">0.226s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,12 +90,25 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>20190502 04:53:06.838 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootpractice.FbLoginTests], using SpringBootContextLoader 
-20190502 04:53:06.839 [Test worker] INFO o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.springbootpractice.FbLoginTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
-20190502 04:53:06.839 [Test worker] INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.springbootpractice.FbLoginTests]: FbLoginTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
-20190502 04:53:06.842 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.springbootpractice.SpringBootPracticeApplication for test class com.example.springbootpractice.FbLoginTests 
-20190502 04:53:06.844 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] 
-20190502 04:53:06.844 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@97169e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3bc9dbe4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@23931982, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@19f4dca1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b48b820, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6e2b4656, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@554f0d18, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6ae1d2c4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34b6ee00, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b1736, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2d91fde0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@49826d64] 
+<pre>20190825 12:57:15.608 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootpractice.FbLoginTests], using SpringBootContextLoader 
+20190825 12:57:15.615 [Test worker] INFO o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.springbootpractice.FbLoginTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+20190825 12:57:15.616 [Test worker] INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.springbootpractice.FbLoginTests]: FbLoginTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+20190825 12:57:15.740 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.springbootpractice.SpringBootPracticeApplication for test class com.example.springbootpractice.FbLoginTests 
+20190825 12:57:15.838 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] 
+20190825 12:57:15.854 [Test worker] INFO o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@595b5a16, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62f5d772, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3dc5faef, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@43fbde6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@737dc9d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b35c54e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@59354c45, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@201c0a08, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@19f6e9a2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7c8c4067, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@fa87cd7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4f247b60] 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+20190825 12:57:36.097 [Test worker] INFO c.e.s.FbLoginTests - Starting FbLoginTests on Sarangs-MacBook-Pro.local with PID 825 (started by sarangyang in /Users/sarangyang/IdeaProjects/GreenCloudServer) 
+20190825 12:57:36.099 [Test worker] INFO c.e.s.FbLoginTests - No active profile set, falling back to default profiles: default 
+20190825 12:57:37.838 [Test worker] INFO o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+20190825 12:57:38.300 [Test worker] INFO c.e.s.FbLoginTests - Started FbLoginTests in 22.403 seconds (JVM running for 23.475) 
 ------ Facebook Login Test ------
 {
     &quot;error&quot;: {
@@ -107,6 +123,13 @@ Error validating access token: Session has expired on Tuesday, 30-Apr-19 09:00:0
 </pre>
 </span>
 </div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+</pre>
+</span>
+</div>
 </div>
 <div id="footer">
 <p>
@@ -115,7 +138,7 @@ Error validating access token: Session has expired on Tuesday, 30-Apr-19 09:00:0
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.4</a> at 2019. 5. 2 오전 4:53:06</p>
+<a href="http://www.gradle.org">Gradle 5.3.1</a> at 2019. 8. 25 오후 12:57:43</p>
 </div>
 </div>
 </body>
