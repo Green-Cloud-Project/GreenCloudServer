@@ -47,5 +47,6 @@ public interface UserMapper {
     String findToken(@Param("user_id") int user_id);
 
     @Select("Select * from rental_office")
-    ArrayList<RentalOffice> findReatalOffice(@Param("lat") String lat, @Param("lon") String lon);
+//    ArrayList<RentalOffice> findReatalOffice(@Param("lat") String lat, @Param("lon") String lon);
+    ArrayList<RentalOffice> findReatalOffice();
 }

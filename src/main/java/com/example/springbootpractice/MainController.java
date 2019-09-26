@@ -39,8 +39,13 @@ public class MainController {
 
     @RequestMapping("/findRentalOffice")
     public @ResponseBody
-    ArrayList<RentalOffice> findRentalOffice(@RequestParam("lat") String lat, @RequestParam("lon") String lon) {
-        ArrayList<RentalOffice> list = userMapper.findReatalOffice(lat, lon);
+//    ArrayList<RentalOffice> findRentalOffice(@RequestParam("lat") String lat, @RequestParam("lon") String lon) {
+////        ArrayList<RentalOffice> list = userMapper.findReatalOffice(lat, lon);
+//        ArrayList<RentalOffice> list = userMapper.findReatalOffice();
+//        return list;
+//    }
+    ArrayList<RentalOffice> findRentalOffice() {
+        ArrayList<RentalOffice> list = userMapper.findReatalOffice();
         return list;
     }
 
