@@ -1,0 +1,11 @@
+cache:
+  paths:
+    - ./.m2/repository
+
+gradle_build:
+  stage: deploy
+  tags:
+    - gradle
+  script:
+    - ./gradlew clean build
+    - echo "success"
