@@ -1,19 +1,15 @@
 package com.example.springbootpractice;
 
+import com.example.springbootpractice.model.GreenCloudRestResponse;
 import com.example.springbootpractice.model.RentalOffice;
 import com.google.gson.Gson;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import com.hexlant.tb.wallet.common.TBLog;
-import org.springframework.web.client.ResponseErrorHandler;
-import org.springframework.web.client.RestTemplate;
 
-import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Map;
 
 @Controller
 public class MainController {
@@ -39,11 +35,11 @@ public class MainController {
 
     @RequestMapping("/findRentalOffice")
     public @ResponseBody
-//    ArrayList<RentalOffice> findRentalOffice(@RequestParam("lat") String lat, @RequestParam("lon") String lon) {
-////        ArrayList<RentalOffice> list = userMapper.findReatalOffice(lat, lon);
-//        ArrayList<RentalOffice> list = userMapper.findReatalOffice();
-//        return list;
-//    }
+        //    ArrayList<RentalOffice> findRentalOffice(@RequestParam("lat") String lat, @RequestParam("lon") String lon) {
+        ////        ArrayList<RentalOffice> list = userMapper.findReatalOffice(lat, lon);
+        //        ArrayList<RentalOffice> list = userMapper.findReatalOffice();
+        //        return list;
+        //    }
     ArrayList<RentalOffice> findRentalOffice() {
         ArrayList<RentalOffice> list = userMapper.findReatalOffice();
         return list;
@@ -109,6 +105,54 @@ public class MainController {
         final String uri = "https://kapi.kakao.com/v2/user/me";
         //final String uri = "https://graph.facebook.com/v3.2/me";
         return restTemplate.postForObject(uri, null, String.class);
+    }
+
+    //즐겨찾기 추가
+    @RequestMapping("/addFavority")
+    public @ResponseBody
+    GreenCloudRestResponse addFavority(@RequestHeader Map<String, String> headers, @RequestParam("office_id") int office_id) {
+        GreenCloudRestResponse greenCloudRestResponse = new GreenCloudRestResponse();
+        try {
+            User user = userMapper.getUser(headers.get("token"));
+            userMapper.addFavority(user.getUser_id(), office_id);
+        } catch (Exception e) {
+            greenCloudRestResponse.setResult(-1);
+            greenCloudRestResponse.setErrorMessage("즐겨찾기 추가 실패: " + e.toString());
+        }
+        return greenCloudRestResponse;
+    }
+
+    //줄겨찾기 제거
+    @RequestMapping("/deleteFavority")
+    public @ResponseBody
+    GreenCloudRestResponse deleteFavority(@RequestHeader Map<String, String> headers, @RequestParam("office_id") int office_id) {
+        GreenCloudRestResponse greenCloudRestResponse = new GreenCloudRestResponse();
+        try {
+            User user = userMapper.getUser(headers.get("token"));
+            boolean b = userMapper.deleteFavority(user.getUser_id(), office_id);
+            greenCloudRestResponse.setResult(b ? 0 : -1);
+        } catch (Exception e) {
+            greenCloudRestResponse.setResult(-1);
+            greenCloudRestResponse.setErrorMessage("즐겨찾기 삭제 실패: " + e.toString());
+        }
+        return greenCloudRestResponse;
+    }
+
+    //즐겨찾기 목록
+    @RequestMapping("/listFavority")
+    public @ResponseBody
+    GreenCloudRestResponse<ArrayList<RentalOffice>> listFavority(@RequestHeader Map<String, String> headers) {
+        GreenCloudRestResponse<ArrayList<RentalOffice>> greenCloudRestResponse = new GreenCloudRestResponse<>();
+        try {
+            User user = userMapper.getUser(headers.get("token"));
+            greenCloudRestResponse.setModel(userMapper.listFavority(user.getUser_id()));
+            //예약번호로 다시 조회하여 결과를 리턴
+        } catch (Exception e) {
+            greenCloudRestResponse.setResult(-1);
+            greenCloudRestResponse.setErrorMessage("즐겨찾기 가져오기 실패: " + e.toString());
+            System.out.println(e.toString());
+        }
+        return greenCloudRestResponse;
     }
 
 

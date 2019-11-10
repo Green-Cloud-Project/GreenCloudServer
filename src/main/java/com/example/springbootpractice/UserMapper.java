@@ -2,12 +2,11 @@ package com.example.springbootpractice;
 
 import com.example.springbootpractice.model.RentalOffice;
 import jdk.nashorn.internal.runtime.logging.Logger;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
+import org.springframework.web.bind.annotation.RequestHeader;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 @Logger
 @Mapper
@@ -47,6 +46,27 @@ public interface UserMapper {
     String findToken(@Param("user_id") int user_id);
 
     @Select("Select * from rental_office")
-//    ArrayList<RentalOffice> findReatalOffice(@Param("lat") String lat, @Param("lon") String lon);
+        //    ArrayList<RentalOffice> findReatalOffice(@Param("lat") String lat, @Param("lon") String lon);
     ArrayList<RentalOffice> findReatalOffice();
+
+    @Select("Select * from rental_office where office_name like %#{office_name}%")
+    ArrayList<RentalOffice> searchReatalOffice();
+
+    @Select("SELECT rental_office.* FROM favority  JOIN rental_office ON favority.office_id = rental_office.office_id WHERE user_id = #{user_id}")
+    ArrayList<RentalOffice> listFavority(@Param("user_id") int user_id);
+
+    @Insert("INSERT INTO favority(user_id, office_id) values(#{user_id}, #{office_id})")
+    void addFavority(@Param("user_id") int user_id, @Param("office_id") int office_id);
+
+    @Delete("DELETE FROM favority WHERE user_id=#{user_id} AND office_id=#{office_id}")
+    boolean deleteFavority(@Param("user_id") int user_id, @Param("office_id") int office_id);
+
+    /**
+     * 토큰으로 사용자 아이디 가져오기
+     *
+     * @param token
+     * @return
+     */
+    @Select("Select * from Token where token = #{token}")
+    User getUser(@Param("token") String token);
 }
