@@ -1,6 +1,8 @@
 package com.example.springbootpractice;
 
+import com.example.springbootpractice.model.RentalHistory;
 import com.example.springbootpractice.model.RentalOffice;
+import com.example.springbootpractice.model.Stock;
 import jdk.nashorn.internal.runtime.logging.Logger;
 import org.apache.ibatis.annotations.*;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -69,4 +71,16 @@ public interface UserMapper {
      */
     @Select("Select * from Token where token = #{token}")
     User getUser(@Param("token") String token);
+
+    @Select("Select * from stock where qr_code = #{qr_code}")
+    Stock getStock(@Param("qr_code") String qr_code);
+
+    @Update("UPDATE stock set status = 'rented' where qr_code = #{qr_code}")
+    void rentStock(@Param("qr_code") String qr_code);
+
+    @Insert("INSERT INTO rental_history(rental_start_time, office_id, umbrella_id, user_id, rental_status) values(#{rental_start_time}, #{office_id}, #{umbrella_id}, #{user_id}, #{rental_status})")
+    void rentUmbrella(@Param("rental_start_time") String rental_start_time, @Param("office_id") int office_id, @Param("umbrella_id") String umbrella_id, @Param("user_id") int user_id, @Param("rental_status") String rental_status);
+
+    @Select("Select * from rental_history where user_id = #{user_id}")
+    ArrayList<RentalHistory> getRentalHistory(@Param("user_id") int user_id);
 }

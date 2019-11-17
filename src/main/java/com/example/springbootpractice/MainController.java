@@ -1,14 +1,18 @@
 package com.example.springbootpractice;
 
 import com.example.springbootpractice.model.GreenCloudRestResponse;
+import com.example.springbootpractice.model.RentalHistory;
 import com.example.springbootpractice.model.RentalOffice;
+import com.example.springbootpractice.model.Stock;
 import com.google.gson.Gson;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import com.hexlant.tb.wallet.common.TBLog;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Map;
 
 @Controller
@@ -155,5 +159,70 @@ public class MainController {
         return greenCloudRestResponse;
     }
 
+    //우산 빌리기
+    @RequestMapping("/rentUmbrella")
+    public @ResponseBody
+    GreenCloudRestResponse rentUmbrella(@RequestHeader Map<String, String> headers, @RequestParam("qr_code") String qr_code) {
+        GreenCloudRestResponse greenCloudRestResponse = new GreenCloudRestResponse<>();
+        User user = userMapper.getUser(headers.get("token"));
 
+        if (user == null) {
+            greenCloudRestResponse.setResult(-1);
+            greenCloudRestResponse.setErrorMessage("토큰만료");
+            return greenCloudRestResponse;
+        }
+
+        Stock stock = userMapper.getStock(qr_code);
+        //재고 상태 바꿔주고
+        if (stock == null) {
+            greenCloudRestResponse.setResult(-1);
+            greenCloudRestResponse.setErrorMessage("대여 실패: 존재하지 않는 우산 코드 입니다.");
+            return greenCloudRestResponse;
+        }
+
+
+        try {
+            if (stock.getStatus().equals("ready")) {
+                //대여기록에 넣어주기
+                userMapper.rentStock(qr_code);
+                SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-dd_hh:mm:ss");
+                String startTime = format.format(new Date(System.currentTimeMillis()));
+                userMapper.rentUmbrella(startTime, stock.getOffice_id(), stock.getUmbrella_id(), user.getUser_id(), "rented");
+            } else {
+                greenCloudRestResponse.setResult(-1);
+                greenCloudRestResponse.setErrorMessage("대여 실패: 이미 대여중입니다.");
+            }
+            //예약번호로 다시 조회하여 결과를 리턴
+        } catch (Exception e) {
+            greenCloudRestResponse.setResult(-1);
+            greenCloudRestResponse.setErrorMessage("대여 실패: " + e.toString());
+            System.out.println(e.toString());
+        }
+        return greenCloudRestResponse;
+    }
+
+
+    //우산 빌리기
+    @RequestMapping("/getRentalHistory")
+    public @ResponseBody
+    GreenCloudRestResponse getRentalHistory(@RequestHeader Map<String, String> headers) {
+        GreenCloudRestResponse<ArrayList<RentalHistory>> greenCloudRestResponse = new GreenCloudRestResponse<>();
+        User user = userMapper.getUser(headers.get("token"));
+
+        if (user == null) {
+            greenCloudRestResponse.setResult(-1);
+            greenCloudRestResponse.setErrorMessage("토큰만료");
+            return greenCloudRestResponse;
+        }
+
+        try {
+            greenCloudRestResponse.setModel(userMapper.getRentalHistory(user.getUser_id()));
+            //예약번호로 다시 조회하여 결과를 리턴
+        } catch (Exception e) {
+            greenCloudRestResponse.setResult(-1);
+            greenCloudRestResponse.setErrorMessage("대여 실패: " + e.toString());
+            System.out.println(e.toString());
+        }
+        return greenCloudRestResponse;
+    }
 }
