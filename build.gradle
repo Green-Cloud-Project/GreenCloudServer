@@ -38,6 +38,10 @@ dependencies {
     //JSP
     compile('org.apache.tomcat.embed:tomcat-embed-jasper')
     compile('javax.servlet:jstl:1.2')
+
+    //Admin
+    compile group: 'de.codecentric', name: 'spring-boot-admin-starter-client', version: '1.5.5'
+    compile('org.springframework.boot:spring-boot-starter-actuator')
 }
 
 bootJar {
