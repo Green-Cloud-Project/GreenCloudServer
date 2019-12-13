@@ -1,6 +1,4 @@
-package com.example.springbootpractice.model;
-
-import com.example.springbootpractice.User;
+package com.share.greencloud.model;
 
 import java.util.ArrayList;
 

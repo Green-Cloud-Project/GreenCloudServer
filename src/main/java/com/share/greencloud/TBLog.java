@@ -1,4 +1,4 @@
-package com.hexlant.tb.wallet.common;
+package com.share.greencloud;
 
 import java.io.BufferedWriter;
 import java.io.File;

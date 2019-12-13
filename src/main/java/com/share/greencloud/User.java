@@ -1,7 +1,7 @@
-package com.example.springbootpractice;
+package com.share.greencloud;
 
-import com.example.springbootpractice.model.FBLoginModel;
-import com.example.springbootpractice.model.LoginModel;
+import com.share.greencloud.model.FBLoginModel;
+import com.share.greencloud.model.LoginModel;
 import com.google.gson.Gson;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -178,7 +178,7 @@ public class User {
         //헤더 추가
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", "Bearer " + token);
-        com.hexlant.tb.wallet.common.TBLog.d(token);
+        TBLog.d(token);
         //파라미터 추가
         HttpEntity requestEntity = new HttpEntity("parameters", headers);
         ResponseEntity<String> response = new TBRestTemplete() {
@@ -188,7 +188,7 @@ public class User {
             }
         }.exchange(uri, HttpMethod.GET, requestEntity, String.class);
         String result = response.getBody();
-        com.hexlant.tb.wallet.common.TBLog.d(result);
+        TBLog.d(result);
         return result;
     }
 

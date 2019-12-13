@@ -193,7 +193,7 @@ public interface UserMapper {
 @PostMapping("/join")
     public @ResponseBody
     String join(@RequestParam("platform") String platform, @RequestParam("token") String token) {
-        com.hexlant.tb.wallet.common.TBLog.d(token);
+        TBLog.d(token);
         User user = new User();
         user.setToken(token);
         user.setPlatform(platform);

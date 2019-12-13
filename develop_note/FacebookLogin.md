@@ -45,7 +45,7 @@ private String connSnsApi(String uri, MultiValueMap<String, String> parameters) 
         //헤더 추가
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", "Bearer " + token);
-        com.hexlant.tb.wallet.common.TBLog.d(token);
+        TBLog.d(token);
         //파라미터 추가
         HttpEntity requestEntity = new HttpEntity("parameters", headers);
         ResponseEntity<String> response = new TBRestTemplete() {
@@ -55,7 +55,7 @@ private String connSnsApi(String uri, MultiValueMap<String, String> parameters) 
             }
         }.exchange(uri, HttpMethod.GET, requestEntity, String.class);
         String result = response.getBody();
-        com.hexlant.tb.wallet.common.TBLog.d(result);
+        TBLog.d(result);
         return result;
     }
 ```

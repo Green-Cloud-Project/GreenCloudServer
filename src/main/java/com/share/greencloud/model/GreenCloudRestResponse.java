@@ -1,4 +1,4 @@
-package com.example.springbootpractice.model;
+package com.share.greencloud.model;
 
 public class GreenCloudRestResponse<RespModel extends Object> {
     private int result;

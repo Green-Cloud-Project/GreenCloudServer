@@ -1,12 +1,12 @@
 plugins {
     id 'org.springframework.boot' version '2.1.4.RELEASE'
     id 'java'
-    id 'com.google.cloud.tools.jib' version '1.3.0'
+    id 'com.google.cloud.tools.jib' version '1.6.0'
 }
 
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.example'
+group = 'greencloud'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -50,8 +50,15 @@ bootJar {
 }
 
 jib {
+    from {
+        image = "openjdk:8-jre-alpine" // 로컬환경에 설치되어 있는 도커데몬에서 Base Image 를 가져온다. (지금 상황에서는 굳이 원격에서 가져올 필요가 없으므로...)
+    }
     to {
-        image = "greencloud-server-application:0.0.1-SNAPSHOT"
+        image = "greencloud/greencloud-server-application:0.0.1-SNAPSHOT"
+    }
+    container {
+        mainClass = "com.share.greencloud.SpringBootPracticeApplication"
+        ports = ["9500"]
+        volumes = ["/tmp"]
     }
 }
-

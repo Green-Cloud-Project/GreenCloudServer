@@ -1,14 +1,13 @@
-package com.example.springbootpractice;
+package com.share.greencloud;
 
-import com.example.springbootpractice.model.GreenCloudRestResponse;
-import com.example.springbootpractice.model.RentalHistory;
-import com.example.springbootpractice.model.RentalOffice;
-import com.example.springbootpractice.model.Stock;
+import com.share.greencloud.model.GreenCloudRestResponse;
+import com.share.greencloud.model.RentalHistory;
+import com.share.greencloud.model.RentalOffice;
+import com.share.greencloud.model.Stock;
 import com.google.gson.Gson;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import com.hexlant.tb.wallet.common.TBLog;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -53,7 +52,7 @@ public class MainController {
     public @ResponseBody
     String join(@RequestParam("platform") String platform, @RequestParam("token") String token) {
         org.apache.ibatis.logging.LogFactory.useSlf4jLogging();
-        com.hexlant.tb.wallet.common.TBLog.d(token);
+        TBLog.d(token);
         User user = new User();
         user.setToken(token);
         user.setPlatform(platform);

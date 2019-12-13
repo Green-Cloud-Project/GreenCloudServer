@@ -1,4 +1,4 @@
-package com.example.springbootpractice;
+package com.share.greencloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

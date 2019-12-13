@@ -1,4 +1,4 @@
-package com.example.springbootpractice;
+package com.share.greencloud;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

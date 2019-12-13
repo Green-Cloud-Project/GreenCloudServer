@@ -1,6 +1,6 @@
-package com.example.springbootpractice;
+package com.share.greencloud;
 
-import com.example.springbootpractice.model.FBLoginModel;
+import com.share.greencloud.model.FBLoginModel;
 import com.google.gson.Gson;
 import org.junit.Test;
 import org.junit.runner.RunWith;

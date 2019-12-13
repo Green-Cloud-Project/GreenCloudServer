@@ -1,4 +1,4 @@
-package com.example.springbootpractice.model;
+package com.share.greencloud.model;
 
 /**
  * {

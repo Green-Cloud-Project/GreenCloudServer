@@ -1,4 +1,4 @@
-package com.example.springbootpractice;
+package com.share.greencloud;
 
 public class TravelBuddyResponse<T extends Object> {
     int response;

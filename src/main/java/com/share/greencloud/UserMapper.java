@@ -1,14 +1,12 @@
-package com.example.springbootpractice;
+package com.share.greencloud;
 
-import com.example.springbootpractice.model.RentalHistory;
-import com.example.springbootpractice.model.RentalOffice;
-import com.example.springbootpractice.model.Stock;
+import com.share.greencloud.model.RentalHistory;
+import com.share.greencloud.model.RentalOffice;
+import com.share.greencloud.model.Stock;
 import jdk.nashorn.internal.runtime.logging.Logger;
 import org.apache.ibatis.annotations.*;
-import org.springframework.web.bind.annotation.RequestHeader;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 @Logger
 @Mapper

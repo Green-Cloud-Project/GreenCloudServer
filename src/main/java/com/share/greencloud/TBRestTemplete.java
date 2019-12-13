@@ -1,4 +1,4 @@
-package com.example.springbootpractice;
+package com.share.greencloud;
 
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.web.client.ResponseErrorHandler;
