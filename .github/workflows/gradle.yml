@@ -21,4 +21,4 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.GITHUB_DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.GITHUB_DOCKER_PASSWORD }}
     - name: Push Docker Image
-      run: docker push greencloud/greencloud-server-application:0.0.2-SNAPSHOT
+      run: docker push greencloud/greencloud-server-application:latest

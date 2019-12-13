@@ -54,9 +54,10 @@ jib {
         image = "openjdk:8-jre-alpine" // 로컬환경에 설치되어 있는 도커데몬에서 Base Image 를 가져온다. (지금 상황에서는 굳이 원격에서 가져올 필요가 없으므로...)
     }
     to {
-        image = "greencloud/greencloud-server-application:0.0.2-SNAPSHOT"
+        image = "greencloud/greencloud-server-application:latest"
     }
     container {
+        jvmFlags = ['-Xms512m', '-Xdebug', '-Xmy:flag=jib-rules']
         mainClass = "com.share.greencloud.SpringBootPracticeApplication"
         ports = ["9500"]
         volumes = ["/tmp"]
