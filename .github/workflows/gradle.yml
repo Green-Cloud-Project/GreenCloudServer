@@ -16,8 +16,9 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew clean build jibDockerBuild
     - name: Login to GitHub Docker Registry
-      run: docker login docker.pkg.github.com -u publisher -p "${GITHUB_PACKAGE_REGISTRY_TOKEN}"
-      env:
-          GITHUB_PACKAGE_REGISTRY_TOKEN: ${{ secrets.GITHUB_PACKAGE_REGISTRY_TOKEN }}
+        run: docker login docker.pkg.github.com --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+        env:
+          DOCKER_USERNAME: ${{ secrets.GITHUB_DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.GITHUB_DOCKER_PASSWORD }}
     - name: Push Docker Image
       run: docker push greencloud/greencloud-server-application:0.0.1-SNAPSHOT
