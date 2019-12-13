@@ -13,5 +13,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Login to GitHub Docker Registry
+      run: docker login hub.docker.com --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      env:
+      DOCKER_USERNAME: ${{ secrets.GITHUB_DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.GITHUB_DOCKER_PASSWORD }}
     - name: Build with Gradle
       run: ./gradlew clean build jib
