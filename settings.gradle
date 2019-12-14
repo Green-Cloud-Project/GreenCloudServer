@@ -3,4 +3,4 @@
 //        gradlePluginPortal()
 //    }
 //}
-rootProject.name = 'springbootpractice'
+rootProject.name = 'greencloud_server'
